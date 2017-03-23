@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <db-welcome></db-welcome>
     <router-view></router-view>
 
     <db-tabbar v-model="select">
@@ -36,12 +37,14 @@
 
 import dbTabbar from './components/tabbar.vue'
 import dbTabbarItem from './components/tabbar_item.vue'
+import dbWelcome from './components/welcome.vue'
 
 export default {
   name: 'app',
   components:{
     dbTabbar,
-    dbTabbarItem
+    dbTabbarItem,
+    dbWelcome
   },
   data() {
     return {
